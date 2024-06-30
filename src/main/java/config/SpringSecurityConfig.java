@@ -22,7 +22,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
-
+ @Autowired
     private final AccessDeniedHandler accessDeniedHandler;
 
     final DataSource dataSource;
