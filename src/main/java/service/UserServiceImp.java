@@ -13,9 +13,11 @@ import java.util.Optional;
 
 @Service
 public class UserServiceImp implements UserService {
-
+@Autowired
     private final UserRepository userRepository;
+    @Autowired
     private final RoleRepository roleRepository;
+    @Autowired
     private final PasswordEncoder passwordEncoder;
 
     private static final String USER_ROLE = "ROLE_USER";
