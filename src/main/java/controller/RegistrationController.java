@@ -13,7 +13,7 @@ import javax.validation.Valid;
 
 @Controller
 public class RegistrationController {
-
+   @Autowired
     private final UserService userService;
 
     @Autowired
